@@ -1,1 +1,1 @@
-fastmcp >= 4.0.5, < 5
+# No runtime dependencies: the MCP server and the hook use the Python standard library only.

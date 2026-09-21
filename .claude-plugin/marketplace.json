@@ -12,7 +12,7 @@
       "name": "solvepool",
       "displayName": "SolvePool — shared solutions, suggested as you type",
       "description": "MCP server + prompt hook + skills. Rooms are GitHub Issues readable without an account; share your own distilled solution with your GitHub login.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": "./",
       "keywords": ["shared-solutions", "knowledge-base", "github-issues", "community", "hook", "mcp"]
     }

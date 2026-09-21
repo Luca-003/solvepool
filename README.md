@@ -20,11 +20,7 @@ Public default rooms live in [Luca-003/solvepool-rooms](https://github.com/Luca-
 
 ## Install
 
-Prerequisites: **Python 3.10+** on your PATH as `python`, and the MCP server dependency:
-
-```
-pip install "fastmcp>=4.0.5,<5"
-```
+The only prerequisite is **Python 3.10 or newer** reachable as `python` (check with `python --version`; on Windows, a `python` that opens the Microsoft Store is not an installation). Nothing else to install: the server and the hook use the Python standard library only.
 
 In Claude Code:
 
@@ -83,7 +79,7 @@ python -m venv .venv
 claude --plugin-dir .
 ```
 
-Tests run offline against a fake GitHub transport. The `.mcp.json`, `hooks/hooks.json`, `skills/` layout follows the Claude Code plugin reference and the same shape as [web-hygiene](https://github.com/Luca-003/web-hygiene-claude-plugin).
+Tests run offline against a fake GitHub transport and drive the MCP layer through in-memory pipes. The stdio MCP protocol (`initialize`, `tools/list`, `tools/call`) is implemented in `server/solvepool_mcp/mcp_stdio.py` so the plugin has no runtime dependency. The `.mcp.json`, `hooks/hooks.json`, `skills/` layout follows the Claude Code plugin reference and the same shape as [web-hygiene](https://github.com/Luca-003/web-hygiene-claude-plugin).
 
 ## License
 
