@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/prompt_match.py",
+              "--data", "${CLAUDE_PLUGIN_DATA}"
+            ],
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

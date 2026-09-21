@@ -1,0 +1,23 @@
+{
+  "name": "solvepool",
+  "displayName": "SolvePool — shared solutions, suggested as you type",
+  "version": "0.1.0",
+  "description": "Rooms of distilled, anonymized solutions to recurring problems, stored as GitHub Issues that anyone can read without an account. A hook checks every prompt against the rooms and suggests matches; a skill helps you share your own solution back. No server, no payment, your data stays on GitHub.",
+  "author": {
+    "name": "Luca Pietrini",
+    "url": "https://github.com/Luca-003"
+  },
+  "homepage": "https://github.com/Luca-003/solvepool",
+  "repository": "https://github.com/Luca-003/solvepool",
+  "license": "MIT",
+  "keywords": ["shared-solutions", "knowledge-base", "github-issues", "community", "hook", "mcp"],
+  "userConfig": {
+    "rooms_repos": {
+      "type": "string",
+      "title": "Rooms repositories",
+      "description": "Comma-separated GitHub repositories whose Issues labelled 'room' are searched. Leave empty for the public default Luca-003/solvepool-rooms. Add a private repo of your team to get private rooms (a GitHub token is then required: GITHUB_TOKEN or `gh auth login`).",
+      "required": false,
+      "sensitive": false
+    }
+  }
+}

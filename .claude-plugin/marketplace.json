@@ -1,0 +1,20 @@
+{
+  "name": "solvepool",
+  "owner": {
+    "name": "Luca Pietrini",
+    "url": "https://github.com/Luca-003"
+  },
+  "metadata": {
+    "description": "SolvePool: shared, anonymized solutions to recurring problems, stored as GitHub Issues and suggested transparently while you work in Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "solvepool",
+      "displayName": "SolvePool — shared solutions, suggested as you type",
+      "description": "MCP server + prompt hook + skills. Rooms are GitHub Issues readable without an account; share your own distilled solution with your GitHub login.",
+      "version": "0.1.0",
+      "source": "./",
+      "keywords": ["shared-solutions", "knowledge-base", "github-issues", "community", "hook", "mcp"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "solvepool": {
+      "command": "python",
+      "args": ["-m", "solvepool_mcp"],
+      "env": {
+        "PYTHONPATH": "${CLAUDE_PLUGIN_ROOT}/server",
+        "SOLVEPOOL_DATA_DIR": "${CLAUDE_PLUGIN_DATA}",
+        "SOLVEPOOL_REPOS": "${user_config.rooms_repos}"
+      }
+    }
+  }
+}
